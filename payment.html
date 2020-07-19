@@ -1,0 +1,127 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>pay</title>
+<link rel="stylesheet" type="text/css" href="payment.css"/>
+    
+    <style>
+    body.paymentpage a{
+    color: white;    
+        } 
+        
+    body.paymentpage {
+    background-image: url('1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+    
+   .payment {
+  border-radius: 5px;
+  background-color: rgb(245,245,245, 0.7);
+  padding: 2% 8%;
+  display: inline-block;
+  margin-left: 380px;
+  margin-right: 300px;
+}
+        
+</style>
+</head>
+<body class="paymentpage">
+      <!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu" class="style-5">
+
+						<ul class="norightborder norightpadding norightmargin">
+							<li><a href="home.html"><div><i class="icon-map-marker2"></i>Home</div></a></li>
+							<li><a href="about.html"><div><i class="icon-file-alt"></i>About Us</div></a></li>
+							<!-- <li><a href="team.html"><div><i class="icon-users2"></i>Team</div></a></li> -->
+							<li><a href="gallery.html"><div><i class="icon-picture"></i>Gallery</div></a></li>
+							<li><a href="services.html"><div><i class="icon-picture"></i>Services</div></a></li> 
+							<li><a href="(1)login.html"><div><i class="icon-star3"></i>Login/Register</div></a></li>
+							<li><a href="#contact"><div><i class="icon-map-marker2"></i>Contact</div></a></li>
+                            <li><a href="book.html"><div><i class="icon-map-marker2"></i>Booking</div></a></li>
+                             <li><a href="payment.html"><div><i class="icon-map-marker2"></i>Payment Mode</div></a></li>
+						</ul>
+
+          </nav><!-- #primary-menu end -->
+<div class="payment">
+	<h1>Payment Mode</h1>
+	<div class="a2">
+    <p>&nbsp;</p>
+    
+    <form action="payment.php" method="post">
+    <label>Card Type:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <select name="type">
+                                <option value="debit">Debit Card</option>
+        						<option value="credit">Credit Card</option>
+                                </select>
+     <br><br>
+     <label>Expirt Date:</label>&nbsp;&nbsp;&nbsp;
+     		<select name="month">
+    				<option>Jun</option>
+        			<option>Feb</option>
+				<option>Mar</option>
+				<option>May</option>
+				<option>Jun</option>
+				<option>July</option>
+				<option>Aug</option>
+				<option>Sep</option>
+				<option>Oct</option>
+				<option>Nov</option>	
+				<option>Dec</option>
+    		</select>
+		<select name="year">
+    			<option>2015</option><option>2016</option>
+                <option>2017</option><option>2018</option>
+                <option>2019</option><option>2020</option>
+                <option>2021</option><option>2022</option>
+                <option>2023</option><option>2024</option>
+                <option>2025</option><option>2026</option>
+                <option>2027</option><option>2028</option>
+                <option>2030</option><option>2031</option>
+                <option>2032</option><option>2033</option>
+                <option>2034</option><option>2035</option>
+                <option>2036</option><option>2037</option>
+                <option>2038</option><option>2039</option>
+                <option>2040</option><option>2041</option>
+                <option>2042</option><option>2043</option>
+                <option>2044</option><option>2045</option>
+                <option>2046</option><option>2047</option>
+                <option>2048</option><option>2049</option><option>2050</option>
+    		</select>
+        <br><br>
+	<label for="cardno">Card No:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="caedno" name="num" placeholder="Number" required="" type="text"><br><br>
+    
+	<label for="name">Card Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="name" name="name" placeholder="Name" required="" type="text"><br><br>
+    
+	<label for="password">CVV No:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="password" name="cvv" placeholder="Number" required="" type="password"><br><br>
+    
+	<label for="password">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pin</label>&nbsp;&nbsp;
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="password" name="password" placeholder="Number" required="" type="password"><br><br><br>
+
+		<input type="submit" name="submit" value="Ok" />
+		<input type="reset" name="reset" value="Reset" />
+   </form>
+    </div><!--a2-->
+</div><!--payment-->
+<!--holder-->
+    
+            <!-- footer -->
+        
+          <h2><a name="contact">CONTACT DETAILS</a></h2>
+          <a><p>SERENA HOTEL<br>
+          Khayaban-e-Suhrwardy<br>
+          Opposite Gulshan Centre
+          <br>Islamabad 44700, Pakistan
+          <br>T: +92 63 141 113 122
+          <br>F: +92 87 647 1330
+          </p></a>
+  
+          <!-- footer end -->
+</body>
+</html>

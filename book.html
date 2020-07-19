@@ -1,0 +1,115 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Booking</title>
+<link rel="stylesheet" type="text/css" href="book.css"/>
+<link rel="stylesheet" type="text/css" href="dhtmlxcalendar.css"/>
+	
+<script src="dhtmlxcalendar.js"></script>
+	
+<style>
+		#calendar,
+		#calendar2,
+		#calendar3,
+		#calendar4,
+		 	{
+			border: 1px solid #909090;
+			font-family: Tahoma;
+			font-size: 12px;
+			}
+    
+     body.bookingpage {
+    background-image: url('33.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+     body.bookingpage a
+    {
+    color: white;
+} 
+    
+   .book {
+  border-radius: 5px;
+  background-color: rgb(245,245,245, 0.7);
+  padding: 2% 6%;
+  display: inline-block;
+  margin-left: 380px;
+  margin-right: 300px;
+}
+</style>
+
+</head>
+<body class="bookingpage">
+      <!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu" class="style-5">
+
+						<ul class="norightborder norightpadding norightmargin">
+							<li><a href="index.html"><div><i class="icon-map-marker2"></i>Home</div></a></li>
+							<li><a href="about.html"><div><i class="icon-file-alt"></i>About Us</div></a></li>
+							<!-- <li><a href="team.html"><div><i class="icon-users2"></i>Team</div></a></li> -->
+							<li><a href="gallery.html"><div><i class="icon-picture"></i>Gallery</div></a></li>
+							<li><a href="services.html"><div><i class="icon-picture"></i>Services</div></a></li> 
+							<li><a href="(1)login.html"><div><i class="icon-star3"></i>Login/Register</div></a></li>
+							<li><a href="#contact"><div><i class="icon-map-marker2"></i>Contact</div></a></li>
+                             <li><a href="book.html"><div><i class="icon-map-marker2"></i>Booking</div></a></li>
+                             <li><a href="payment.html"><div><i class="icon-map-marker2"></i>Payment Mode</div></a></li>
+						</ul>
+
+          </nav><!-- #primary-menu end -->
+<div class="book">
+<h1>Booking</h1>
+	<div class="a1">
+    <p>&nbsp;</p>
+    
+    <form action="book.php" method="post">
+		 <label for="name">Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    			<input id="name" name="name" placeholder="Full Name" required="" tabindex="1" type="text"><br><br>
+		
+		<label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    			<input id="email" name="email" placeholder="Email" required="" type="email"><br><br>
+		
+		<label for="mobile">Mobile No:</label> &nbsp;
+            		<input id="phone" name="mobile" placeholder="Number" required="" type="text"> <br><br>
+		
+		<div style="position:relative;height:80px;">
+		
+		<label for="in">Check in:</label> &nbsp;&nbsp;&nbsp;&nbsp;
+            		<input id="calendar3" name="in" placeholder="2015-06-02" required="" type="text"> <br><br>
+		
+		<label for="out">Check out:</label> &nbsp;&nbsp;
+            		<input id="calendar4" name="out" placeholder="2015-06-05" required="" type="text"> <br><br>
+		
+		</div>
+		Room Type:
+			<select name="room">
+				<option value="A/C">A/C</option>
+				<option value="Non-A/C">Non-A/C</option>
+			</select>
+			<select  name="type">
+				<option value="single">Single</option>
+				<option value="double">Double</option>
+				<option value="three">Three</option>
+			</select>
+		<br/><br/><br/>
+<a href="payment.html"><input type="submit" name="submit" value="Book"/></a>
+<input type="reset" name="reset" value="Reset" />
+</form>
+    </div>
+    </div>
+
+    <!-- footer -->
+        
+          <h2><a name="contact">CONTACT DETAILS</a></h2>
+          <a><p>SERENA HOTEL<br>
+          Khayaban-e-Suhrwardy<br>
+          Opposite Gulshan Centre
+          <br>Islamabad 44700, Pakistan
+          <br>T: +92 63 141 113 122
+          <br>F: +92 87 647 1330
+          </p></a>
+  
+          <!-- footer end -->
+</body>
+</html>
